@@ -3,14 +3,14 @@ var keys = require("./keys.js");
 var Bands = require("./bands.js");
 
 // var spotify = new Spotify(keys.spotify);
-var band = new Bands();
+var event = new Bands();
 
 var command = process.argv[2];
 var userInput = process.argv.slice(3).join(" ");
 
 if (command === "concert-this") {
-    console.log("this is the concert-this command");
-    band.getBand(userInput);
+    // console.log("this is the concert-this command");
+    event.getBand(userInput);
 
 } else if (command === "spotify-this-song") {
     console.log("this is spotify-this-song command");
