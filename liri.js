@@ -1,11 +1,11 @@
 require("dotenv").config();
 var fs = require("fs");
-var keys = require("./keys.js");
 var Bands = require("./bands.js");
-var random = require("./randomcommand.js");
+var Song = require("./spotify.js");
+// var random = require("./randomcommand.js");
 
-// var spotify = new Spotify(keys.spotify);
 var event = new Bands();
+var song = new Song();
 
 var command = process.argv[2];
 var userInput = process.argv.slice(3).join(" ");
@@ -17,7 +17,7 @@ function prompt(command, userInput) {
     if (command === "concert-this") {
 
         console.log("this is the concert-this command");
-        
+
         //takes the user's input and passes it into the band.js file
         event.getBand(userInput);
 
@@ -27,12 +27,16 @@ function prompt(command, userInput) {
 
         console.log("this is spotify-this-song command");
 
-    } 
+        //takes the user's input and passes it into the spotify.js file
+        song.getSong(userInput);
+
+
+    }
     //checks if the command is movie-this
     else if (command === "movie-this") {
         console.log("this is movie-this command");
 
-    } 
+    }
     //checks if the command is do-what-it-says
     else if (command === "do-what-it-says") {
         console.log("this is do-what-it-says command");
