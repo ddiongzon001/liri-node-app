@@ -41,7 +41,7 @@ var Song = function(){
                     throw err;
                 }
                 // shows the user the information that is in the array.
-                console.log("\n\n" + songData);
+                console.log("\n" + songData);
             })
 
         })

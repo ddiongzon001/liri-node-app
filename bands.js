@@ -36,7 +36,7 @@ var Event = function () {
                 if(err){
                     throw err;
                 }
-                console.log(concertData);
+                console.log("\n" + concertData);
             });
         });
 
