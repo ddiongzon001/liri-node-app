@@ -103,3 +103,19 @@ Location of venue: Las Vegas
 Date of the event: 07/26/2019
 ------------------------------------------------------------
 
+Name of venue: KAOS Vegas
+
+Location of venue: Las Vegas
+
+Date of the event: 07/26/2019
+------------------------------------------------------------
+
+Artist Name: Rick Astley
+
+Song Name: Never Gonna Give You Up
+
+Preview of the Song: https://p.scdn.co/mp3-preview/22bf10aff02db272f0a053dff5c0063d729df988?cid=5ee916b595554091adc0a0258ee32b3e
+
+Album: Whenever You Need Somebody
+------------------------------------------------------------
+

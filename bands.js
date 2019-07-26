@@ -1,8 +1,11 @@
+// all the variables that the files needs to import
 var axios = require("axios");
 var moment = require('moment');
 var fs = require("fs");
 
+// create the constructor function of Bands
 var Bands = function () {
+    
     // divider will be user as a spacer
     var divider = "\n------------------------------------------------------------\n\n";
 
@@ -16,7 +19,7 @@ var Bands = function () {
             var jsonData = response.data[0];
 
 
-            //creates the array that stores the 
+            //creates the array that stores the string
             var concertData = [
                 // * Name of the venue
                 "Name of venue: " + jsonData.venue.name,
