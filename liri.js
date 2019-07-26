@@ -18,7 +18,7 @@ function prompt(command, userInput) {
     //checks if command is concert-this
     if (command === "concert-this") {
 
-        console.log("this is the concert-this command");
+        console.log("\n*** SEARCHING FOR AN EVENT FOR THE ARTIST: " + userInput.toUpperCase() + " ***");
 
         //takes the user's input and passes it into the band.js file
         event.getBand(userInput);
@@ -27,7 +27,7 @@ function prompt(command, userInput) {
     //checks if the command is spotify-this-song 
     else if (command === "spotify-this-song") {
 
-        console.log("this is spotify-this-song command");
+        console.log("\n*** SEARCHING FOR A SONG WITH THE TITLE OF: " + userInput.toUpperCase() + " ***");
 
         //takes the user's input and passes it into the spotify.js file
         song.getSong(userInput);
@@ -36,14 +36,16 @@ function prompt(command, userInput) {
     }
     //checks if the command is movie-this
     else if (command === "movie-this") {
-        console.log("this is movie-this command");
 
+        console.log("\n*** SEARCHING FOR A MOVIE WITH THE TITLE OF: " + userInput.toUpperCase()+ " ***");
+
+        //takes the user's input and passes it into the movies.js file
         movie.getMovie(userInput);
 
     }
     //checks if the command is do-what-it-says
     else if (command === "do-what-it-says") {
-        console.log("this is do-what-it-says command");
+        console.log("*** DOING WHATEVER RANDOM.TXT SAYS ***");
 
         //defines function that reads the random.txt file
         function readRandom() {
@@ -53,6 +55,7 @@ function prompt(command, userInput) {
                 if (err) {
                     throw err;
                 }
+                console.log("*** Currently says: " + data + " ***");
 
                 //puts the text from random.txt into an array
                 data = data.split(" ");

@@ -33,7 +33,7 @@ var Song = function(){
                 "Song Name: " + jSONdata.name,
                 "Preview of the Song: " + jSONdata.preview_url,
                 "Album: " + jSONdata.album.name
-            ].join("\n\n");
+            ].join("\n");
 
             // appends the array to the log.txt file
             fs.appendFile("log.txt", songData + divider, function(err){
@@ -41,6 +41,7 @@ var Song = function(){
                     throw err;
                 }
                 // shows the user the information that is in the array.
+                console.log("\n~~~ SONG ~~~")
                 console.log("\n" + songData);
             })
 

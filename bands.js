@@ -29,13 +29,14 @@ var Event = function () {
 
                 // * Date of the Event (use moment to format this as "MM/DD/YYYY")
                 "Date of the event: " + moment(jsonData.datetime).format("MM/DD/YYYY")
-            ].join("\n\n");
+            ].join("\n");
 
             // append concert data to log.txt
             fs.appendFile("log.txt", concertData + divider, function(err){
                 if(err){
                     throw err;
                 }
+                console.log("\n~~~ EVENT ~~~")
                 console.log("\n" + concertData);
             });
         });

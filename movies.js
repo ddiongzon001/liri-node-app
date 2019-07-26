@@ -30,7 +30,7 @@ var Movie = function(){
                 "Language: " + jSONdata.Language,
                 "Plot: " + jSONdata.Plot,
                 "Actors: " + jSONdata.Actors
-            ].join("\n\n");
+            ].join("\n");
 
             // appends the joined array with the divider to the log.txt file
             fs.appendFile("log.txt", movieData + divider, function(err){
@@ -38,6 +38,7 @@ var Movie = function(){
                     throw err;
                 }
                 // logs the information to the user
+                console.log("\n~~~ MOVIE ~~~")
                 console.log("\n" + movieData);
             })
         })
