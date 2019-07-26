@@ -1,9 +1,9 @@
 ## LIRI-Node-App
 This is an app that allows the user to use specific commands to do the following:
 
-    * look up event information about an artist or band
-    * look up information about a specfic song
-    * look up information about a specfic movie
+* look up event information about an artist or band
+* look up information about a specfic song
+* look up information about a specfic movie
 
 Please look at a short video that demos the application [here](https://drive.google.com/file/d/1NnOlFlwibZ-X2Du3HcXW1sxXIehV5GJF/view)!
 
