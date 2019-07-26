@@ -1,4 +1,4 @@
-// all the variables that the files needs to import
+// all the variables that holds the packages that the file needs to 
 var axios = require("axios");
 var moment = require('moment');
 var fs = require("fs");

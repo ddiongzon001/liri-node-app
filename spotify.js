@@ -1,4 +1,4 @@
-// all the variables that the files needs to import
+// all the variables that holds the packages that the file needs to 
 var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
 var fs = require("fs");
