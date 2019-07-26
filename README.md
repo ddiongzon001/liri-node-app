@@ -13,7 +13,7 @@ Please look at a short video that demos the application [here](https://drive.goo
 
 
 ## Code Example
-![Image of commands](images\commands.png)
+![Image of commands](images/commands.png)
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
