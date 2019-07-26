@@ -44,4 +44,5 @@ var Movie = function(){
     }
 }
 
+// exports the Movie constructor
 module.exports = Movie;

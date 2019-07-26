@@ -43,4 +43,5 @@ var Event = function () {
     }
 }
 
+// exports the Event constructor
 module.exports = Event;
