@@ -3,7 +3,6 @@ var fs = require("fs");
 var Event = require("./bands.js");
 var Song = require("./spotify.js");
 var Movie = require("./movies.js");
-// var random = require("./randomcommand.js");
 
 var event = new Event();
 var song = new Song();
