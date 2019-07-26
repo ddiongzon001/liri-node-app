@@ -10,7 +10,7 @@ var spotify = new Spotify(keys.spotify);
 var Song = function(){
 
     // divider that will be used for the log.txt file
-    var divider = "\n------------------------------------------------------------\n\n";
+    var divider = "\n\n------------------------------------------------------------\n\n";
 
     // method that looks through the API of spotify and prints it
     this.getSong = function(songName){

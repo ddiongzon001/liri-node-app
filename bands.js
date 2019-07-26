@@ -7,7 +7,7 @@ var fs = require("fs");
 var Event = function () {
 
     // divider will be user as a spacer
-    var divider = "\n------------------------------------------------------------\n\n";
+    var divider = "\n\n------------------------------------------------------------\n\n";
 
     // takes artist from the liri and searches the bandsintown API
     this.getBand = function (artist) {
