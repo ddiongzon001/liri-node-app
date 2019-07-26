@@ -9,11 +9,23 @@ Please look at a short video that demos the application [here](https://drive.goo
 
 ## Technologies used and why
 <b>Built with</b>
-- [Node](https://nodejs.org/en/): 
+- [Node](https://nodejs.org/en/): An environment that allows developers to use Javascript to interact with the user without front-end coding.
+- [Node-Spotify-API](https://www.npmjs.com/package/node-spotify-api): Used the Spotify API to gather requested song information.
+- [Axios](https://www.npmjs.com/package/axios): Used Axios to passthrough the APIs of the following:
+    - [OMDB API](http://www.omdbapi.com): Used the OMDB API to gather requested movie information.
+    - [Bands In Town API](http://www.artists.bandsintown.com/bandsintown-api): Used the Bands In Town API to gather requested events information.
+- [Moment](https://www.npmjs.com/package/moment): Allowed date of the event to be formatted correctly.
+- [DotEnv](https://www.npmjs.com/package/dotenv): Set environment variables to the global `process.env` object in node.
 
 
 ## Code Example
-![Image of commands](https://raw.githubusercontent.com/ddiongzon001/liri-node-app/master/images/commands.PNG)
+![Image of commands](https://raw.githubusercontent.com/ddiongzon001/liri-node-app/master/images/example.PNG)
+
+After the user types <i>'node liri.js'</i>, it shows the user the commands they can pick from. 
+
+Once the user selects a command, they will have to look up a artist, song, or movie of their choice and type it in the following manner: <i>'node liri.js concert-this Jason Mraz</i>
+
+The code captures the user response and displays to the console the information regarding their search.
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
