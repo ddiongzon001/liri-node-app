@@ -4,8 +4,8 @@ var moment = require('moment');
 var fs = require("fs");
 
 // create the constructor function of Bands
-var Bands = function () {
-    
+var Event = function () {
+
     // divider will be user as a spacer
     var divider = "\n------------------------------------------------------------\n\n";
 
@@ -43,4 +43,4 @@ var Bands = function () {
     }
 }
 
-module.exports = Bands;
+module.exports = Event;

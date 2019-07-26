@@ -1,11 +1,13 @@
 require("dotenv").config();
 var fs = require("fs");
-var Bands = require("./bands.js");
+var Event = require("./bands.js");
 var Song = require("./spotify.js");
+var Movie = require("./movies.js");
 // var random = require("./randomcommand.js");
 
-var event = new Bands();
+var event = new Event();
 var song = new Song();
+var movie = new Movie();
 
 var command = process.argv[2];
 var userInput = process.argv.slice(3).join(" ");
@@ -35,6 +37,8 @@ function prompt(command, userInput) {
     //checks if the command is movie-this
     else if (command === "movie-this") {
         console.log("this is movie-this command");
+
+        movie.getMovie(userInput);
 
     }
     //checks if the command is do-what-it-says
