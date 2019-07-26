@@ -27,6 +27,11 @@ function prompt(command, userInput) {
     //checks if the command is spotify-this-song 
     else if (command === "spotify-this-song") {
 
+        // if the userInput variable is blank, it searches the song the sign
+        if (!userInput){
+            userInput = "The Sign Ace of Base";
+        }
+
         console.log("\n*** SEARCHING FOR A SONG WITH THE TITLE OF: " + userInput.toUpperCase() + " ***");
 
         //takes the user's input and passes it into the spotify.js file
@@ -36,6 +41,11 @@ function prompt(command, userInput) {
     }
     //checks if the command is movie-this
     else if (command === "movie-this") {
+
+        // if the userInput variable is blank, it searches the movie "Mr. Nobody"
+        if (!userInput){
+            userInput = "Mr. Nobody";
+        }
 
         console.log("\n*** SEARCHING FOR A MOVIE WITH THE TITLE OF: " + userInput.toUpperCase()+ " ***");
 
@@ -76,7 +86,11 @@ function prompt(command, userInput) {
 
 
     } else {
-        console.log("this is the default option");
+        console.log("\n*** PLEASE ENTER ONE OF THE FOLLOWING COMMANDS: ***\n");
+        console.log("   concert-this <artist-name-of-choice>");
+        console.log("   spotify-this-song <song-title-of-choice>");
+        console.log("   movie-this <movie-title-of-choice>");
+        console.log("   do-what-it-says");
     }
 }
 
