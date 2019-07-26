@@ -8,20 +8,12 @@ This is an app that allows the user to use specific commands to do the following
 Please look at a short video that demos the application [here](https://drive.google.com/file/d/1NnOlFlwibZ-X2Du3HcXW1sxXIehV5GJF/view)!
 
 ## Technologies used and why
-Ex. -
-
 <b>Built with</b>
-- [React](https://reactjs.org/)
-<b>is a lightweight front end library that allowed me to create highly reusable components I could use across my application<b>
+- [Node](https://nodejs.org/en/): 
 
-## Features
-What makes your project stand out?
-
-## Screenshots
-Include logo/demo screenshot etc.
 
 ## Code Example
-Show what your project does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+![Image of commands](relative/path/to/command.png)
 
 ## Installation
 Provide step by step series of examples and explanations about how to get a development env running.
